@@ -9,46 +9,48 @@
 
 Рассмотрим основную часть кода, которая "вызывает" процедуры:<br>
 - **Основная часть кода**<br>
-1. Сначала считываем в консоли размер массива, далее резервируем память под наш массив заданного размера. <br>
+1. Считываем в консоли размер массива, далее резервируем память под наш массив заданного размера. <br>
 2. Вызываем процедуру ввода массива. <br>
 3. Вызываем процедуру вывода нашего массива. <br>
 4. Делаем ранний выход из программы в случае, если элементов меньше двух. <br>
-5. Резервируем память под вспомогательный массив вызываем процедуру копирования исходного массива в новый. <br>
+5. Резервируем память под вспомогательный массив, вызываем процедуру копирования исходного массива в новый. <br>
 6. Изменяем исходный массив по заданию с помощью вспомогательного. <br>
 7. Вызываем процедуру вывода измененного массива. <br>
 
-<img src="https://raw.githubusercontent.com/TopYar/HSE_FCS_SE-ASM/master/HW2/img/proc4.png?v=1.01" alt="" width="700" /> <br><br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/MainCode1.png?v=1.01" alt="" width="700" /> <br><br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/MainCode2.png?v=1.01" alt="" width="700" /> <br><br>
 Рассмотрим часть кода, относящегося к процедурам:<br>
 - **Процедура ввода массива**<br>
-<img src="https://raw.githubusercontent.com/TopYar/HSE_FCS_SE-ASM/master/HW2/img/proc1.png?v=1.01" alt="" width="700" /> <br><br>
-- **Решение основной задачи (замена отрицательных чисел на максимум из массива)**<br>
-<img src="https://raw.githubusercontent.com/TopYar/HSE_FCS_SE-ASM/master/HW2/img/proc3.png?v=1.01" alt="" width="550" /> <br><br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/InputArrCode.png?v=1.01" alt="" width="700" /> <br><br>
+- **Процедура создания вспомогательного массива посредством копирования исходного**<br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/CopyArrCode.png?v=1.01" alt="" width="550" /> <br><br>
+- **Решение основной задачи (Создание массива из сумм двух соседних элементов исходного)**<br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/TaskCode.png?v=1.01" alt="" width="550" /> <br><br>
 - **Процедура вывода массива**<br>
-<img src="https://raw.githubusercontent.com/TopYar/HSE_FCS_SE-ASM/master/HW2/img/proc2.png?v=1.01" alt="" width="550" /> <br><br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/OutputArrCode.png?v=1.01" alt="" width="550" /> <br><br>
 
 ## Тестирование программы
 - **Тест 1**<br>
-Для начала проверим проверку ввода на натуральное число:<br>
-<img src="https://raw.githubusercontent.com/TopYar/HSE_FCS_SE-ASM/master/HW2/img/arr6.png" alt="" width="350" /> <br>
+Для начала проверим ввод размера массива на отрицательные числа и ноль:<br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/Test1.png?v=1.01" alt="" width="350" /> <br>
 Программа отработала успешно <br><br>
 - **Тест 2**<br>
-Введем простенький массив, в котором максимальный элемент окажется -1, тогда все остальные элементы заменятся на -1:<br>
-<img src="https://raw.githubusercontent.com/TopYar/HSE_FCS_SE-ASM/master/HW2/img/arr1.png" alt="" width="350" /> <br>
-Программа отработала успешно <br><br>
+Введем массив из чередующихся чисел 1 и -1, тогда все элементы нового должны обнулиться:<br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/Test2.png?v=1.01" alt="" width="350" /> <br>
+Программа отработала успешно (также значит, что корректно обрабатываются отрицательные числа) <br><br>
 - **Тест 3**<br>
-Введем другой массив, в котором максимальный элемент окажется положительным, тогда все остальные <b> отрицательные элементы </b> заменятся на этот максимум:<br>
-<img src="https://raw.githubusercontent.com/TopYar/HSE_FCS_SE-ASM/master/HW2/img/arr2.png" alt="" width="300" /> <br>
+Введем массив из случайно разбросанных чисел и проверим корректность выполнения задания:<br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/Test3.png?v=1.01" alt="" width="300" /> <br>
 Программа отработала успешно <br><br>
 - **Тест 4**<br>
-Введем другой массив, в котором проверим работу вблизи нижней границы:<br>
-<img src="https://raw.githubusercontent.com/TopYar/HSE_FCS_SE-ASM/master/HW2/img/arr3.png" alt="" width="300" /> <br>
+Введем массив, содержащий большие числа, и проверим корректность работы:<br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/Test4.png?v=1.01" alt="" width="300" /> <br>
 Программа отработала успешно <br><br>
 - **Тест 5**<br>
-Введем массив посложнее и проверим правильность выполнения программы:<br>
-<img src="https://raw.githubusercontent.com/TopYar/HSE_FCS_SE-ASM/master/HW2/img/arr4.png" alt="" width="300" /> <br>
-Программа отработала должным образом
+Введем большой массив и проверим корректность выполнения программы:<br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/Test5.png?v=1.01" alt="" width="300" /> <br>
+Программа отработала успешно <br><br>
 - **Тест 6**<br>
-Введем большой массив и проверим правильность выполнения программы:<br>
-<img src="https://raw.githubusercontent.com/TopYar/HSE_FCS_SE-ASM/master/HW2/img/arr5.png" alt="" width="750" /> <br>
-Все отрицательные числа заменили на максимум (то есть 100), а неотрицательные числа остались нетронутыми<br>
+Последняя маленькая проверка на чередование по 2:<br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/Test6.png?v=1.01" alt="" width="750" /> <br>
 Программа отработала должным образом
