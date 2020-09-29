@@ -17,6 +17,7 @@ section .data
         typeSize db 'Please, type size of an array: ', 10, 13, 0
         typeArr db 'Please, type your (int) array: ', 10, 13, 0
         individualLengthError db 'Your array length is less than 2! Can`t perform task.', 10, 13, 10, 13, 0
+        firstArr db 'Typed array:', 10, 13, 0
         yourArr db 'Your new array:', 10, 13, 0
         wrongInput db 'Incorrect input. Please try again', 10, 13, 10, 13, 0
         newLine db 10, 13, 0
@@ -29,7 +30,7 @@ section .data
         arr : times 8 db 0             ; массив
         taskArr : times 8 db 0
 
-        one dd 1
+        one dd 1                       ; переменная для сравнения
 
  section .text
         _main:
@@ -60,6 +61,9 @@ section .data
 
                 xor r11, r11
                 mov [rel i], r11       ; обнуляем счетчик цикла
+
+                mov rdi, firstArr
+                call _printf
 
                 call OutputArray       ; выводим весь массив
 
@@ -94,7 +98,13 @@ section .data
 
                 call OutputArray       ; выводим массив
 
+                mov rdi, newLine
+                call _printf
+
                 mov rdi, [rel arr]
+                call _free
+                                       ; освобождаем зарезервированную память
+                mov rdi, [rel taskArr]
                 call _free
 
                 jmp ExitProgram
@@ -173,7 +183,7 @@ section .data
                 add r11, r10
                 mov r12, [rel rax]
                 add r12, [rel r11]
-                mov [rel rax], r12
+                mov [rel rax], r12      ; копируем элемент массива arr в элемент массива taskArr
 
                 mov r11, [rel i]
                 add r11, 1              ; инкременируем i
