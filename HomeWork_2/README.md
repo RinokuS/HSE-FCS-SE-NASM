@@ -17,7 +17,7 @@
 6. Изменяем исходный массив по заданию с помощью вспомогательного. <br>
 7. Вызываем процедуру вывода измененного массива. <br>
 
-<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/MainCode1.png?v=1.01" alt="" width="700" /> <br><br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/blob/master/HomeWork_2/pictures/MainCode1.png" alt="" width="700" /> <br><br>
 <img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/MainCode2.png?v=1.01" alt="" width="700" /> <br><br>
 Рассмотрим часть кода, относящегося к процедурам:<br>
 - **Процедура ввода массива**<br>
