@@ -40,11 +40,11 @@
 Программа отработала успешно (также значит, что корректно обрабатываются отрицательные числа) <br><br>
 - **Тест 3**<br>
 Введем массив из случайно разбросанных чисел и проверим корректность выполнения задания:<br>
-<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/blob/master/HomeWork_2/pictures/Test3.png" alt="" width="300" /> <br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/blob/master/HomeWork_2/pictures/Test3.png" alt="" width="350" /> <br>
 Программа отработала успешно <br><br>
 - **Тест 4**<br>
 Введем массив, содержащий большие числа, и проверим корректность работы:<br>
-<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/blob/master/HomeWork_2/pictures/Test4.png" alt="" width="300" /> <br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/blob/master/HomeWork_2/pictures/Test4.png" alt="" width="350" /> <br>
 Программа отработала успешно <br><br>
 - **Тест 5**<br>
 Введем большой массив и проверим корректность выполнения программы:<br>
