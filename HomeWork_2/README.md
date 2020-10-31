@@ -17,40 +17,40 @@
 6. Изменяем исходный массив по заданию с помощью вспомогательного. <br>
 7. Вызываем процедуру вывода измененного массива. <br>
 
-<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/MainCode1.png?v=1.01" alt="" width="700" /> <br><br>
-<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/MainCode2.png?v=1.01" alt="" width="700" /> <br><br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/blob/master/HomeWork_2/pictures/MainCode1.png" alt="" width="700" /> <br><br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/blob/master/HomeWork_2/pictures/MainCode2.png" alt="" width="700" /> <br><br>
 Рассмотрим часть кода, относящегося к процедурам:<br>
 - **Процедура ввода массива**<br>
-<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/InputArrCode.png?v=1.01" alt="" width="700" /> <br><br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/blob/master/HomeWork_2/pictures/InputArrCode.png" alt="" width="700" /> <br><br>
 - **Процедура создания вспомогательного массива посредством копирования исходного**<br>
-<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/CopyArrCode.png?v=1.01" alt="" width="550" /> <br><br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/blob/master/HomeWork_2/pictures/CopyArrCode.png" alt="" width="700" /> <br><br>
 - **Решение основной задачи (Создание массива из сумм двух соседних элементов исходного)**<br>
-<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/TaskCode.png?v=1.01" alt="" width="550" /> <br><br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/blob/master/HomeWork_2/pictures/TaskCode.png" alt="" width="700" /> <br><br>
 - **Процедура вывода массива**<br>
-<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/OutputArrCode.png?v=1.01" alt="" width="550" /> <br><br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/blob/master/HomeWork_2/pictures/OutputArrCode.png" alt="" width="700" /> <br><br>
 
 ## Тестирование программы
 - **Тест 1**<br>
 Для начала проверим ввод размера массива на отрицательные числа и ноль:<br>
-<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/Test1.png?v=1.01" alt="" width="350" /> <br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/blob/master/HomeWork_2/pictures/Test1.png" alt="" width="700" /> <br>
 Программа отработала успешно <br><br>
 - **Тест 2**<br>
 Введем массив из чередующихся чисел 1 и -1, тогда все элементы нового должны обнулиться:<br>
-<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/Test2.png?v=1.01" alt="" width="350" /> <br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/blob/master/HomeWork_2/pictures/Test2.png" alt="" width="700" /> <br>
 Программа отработала успешно (также значит, что корректно обрабатываются отрицательные числа) <br><br>
 - **Тест 3**<br>
 Введем массив из случайно разбросанных чисел и проверим корректность выполнения задания:<br>
-<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/Test3.png?v=1.01" alt="" width="300" /> <br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/blob/master/HomeWork_2/pictures/Test3.png" alt="" width="700" /> <br>
 Программа отработала успешно <br><br>
 - **Тест 4**<br>
 Введем массив, содержащий большие числа, и проверим корректность работы:<br>
-<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/Test4.png?v=1.01" alt="" width="300" /> <br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/blob/master/HomeWork_2/pictures/Test4.png" alt="" width="700" /> <br>
 Программа отработала успешно <br><br>
 - **Тест 5**<br>
 Введем большой массив и проверим корректность выполнения программы:<br>
-<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/Test5.png?v=1.01" alt="" width="300" /> <br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/blob/master/HomeWork_2/pictures/Test5.png" alt="" width="700" /> <br>
 Программа отработала успешно <br><br>
 - **Тест 6**<br>
 Последняя маленькая проверка на чередование по 2:<br>
-<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/tree/master/HomeWork_2/pictures/Test6.png?v=1.01" alt="" width="750" /> <br>
+<img src="https://github.com/RinokuS/HSE-FCS-SE-NASM/blob/master/HomeWork_2/pictures/%20Test6.png" alt="" width="700" /> <br>
 Программа отработала должным образом
